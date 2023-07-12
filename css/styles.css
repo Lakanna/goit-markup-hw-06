@@ -71,9 +71,9 @@ outline-offset: -2px;
 
 /* desctop screen */
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158;
+@media screen and (min-width: 1200px) {
+    .container{
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -248,9 +248,21 @@ outline-offset: -2px;
 .order-button:focus{
     background-color: var(--pressed-state);
 }
+
+
+/* section featur */
+
+.section-featur{
+   padding: 96px 0;
+   
+}
+
+@media only screen and (min-width: 1200px) {
 .section-featur{
     padding: 120px 0;
+  }
 }
+
 
 .featur-list{
     display: flex;
