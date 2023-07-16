@@ -25,7 +25,7 @@
 			<div class="container head">
 				<!-- навігація по сторінці -->
 
-				<!-- <nav class="header-nav">
+				<nav class="header-nav">
 					<a href="./index.html" class="nav-logo link">
 						Web
 						<span class="accent">Studio</span>
@@ -42,10 +42,10 @@
 							<a href="" class="nav-list">Contacts</a>
 						</li>
 					</ul>
-				</nav> -->
+				</nav>
 
 				<!-- пошта і телефон -->
-				<!-- <address class="address">
+				<address class="address">
 					<ul class="list address-list">
 						<li>
 							<a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a>
@@ -54,19 +54,27 @@
 							<a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a>
 						</li>
 					</ul>
-				</address> -->
+				</address>
+
+				<!-- mobile button -->
+
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="menu-toggle-icon" width="32" height="22">
+						<use href="./images/icons.svg#icon-hamburger"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
 		<main>
 			<!-- назва і кнопка -->
 
-			<!-- <section class="main">
+			<section class="main">
 				<div class="container">
 					<h1 class="main-title">Effective Solutions for Your Business</h1>
 					<button type="button" class="order-button" data-modal-open>Order Service</button>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- особливості 2 -->
 			<section class="section-featur">
@@ -513,5 +521,77 @@
 		</div>
 
 		<script src="./js/modal.js"></script>
+
+		<!-- mobile menu -->
+
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="modal-btn mobile js-close-menu">
+				<svg class="modal-icon" width="8" height="8">
+					<use href="./images/icons.svg#icon-close-black"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-menu">
+				<li class="mobile-menu-item">
+					<a class="mobile-menu-link" href="./index.html">Studio</a>
+				</li>
+				<li class="mobile-menu-item">
+					<a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+				</li>
+				<li class="mobile-menu-item">
+					<a class="mobile-menu-link" href="#">Contacts</a>
+				</li>
+			</ul>
+
+			<ul class="list mobile-address-list">
+				<li class="mobile-address-item">
+					<a href="tel:+110001111111" class="mobile-address-link tel link">+11 (000) 111-11-11</a>
+				</li>
+				<li class="mobile-address-item">
+					<a href="mailto:info@devstudio.com" class="mobile-address-link link">
+						info@devstudio.com
+					</a>
+				</li>
+			</ul>
+			<ul class="social-list-mobile">
+				<li class="social-items">
+					<a class="social-links" href="">
+						<svg class="icons-foot" width="24" height="24">
+							<use href="./images/icons.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-items">
+					<a class="social-links" href="">
+						<svg class="icons-foot" width="24" height="24">
+							<use href="./images/icons.svg#twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-items">
+					<a class="social-links" href="">
+						<svg class="icons-foot" width="24" height="24">
+							<use href="./images/icons.svg#facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-items">
+					<a class="social-links" href="">
+						<svg class="icons-foot" width="24" height="24">
+							<use href="./images/icons.svg#linkedin"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+
+		<script defer src="js/mobile-menu.js"></script>
 	</body>
 </html>
